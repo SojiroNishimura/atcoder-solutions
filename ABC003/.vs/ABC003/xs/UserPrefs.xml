@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{042499F5-234D-4B3F-9DF1-A9AC13FD843B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Problem_A/bin/Debug/Inputs.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Problem_B/bin/Debug/Inputs.txt">
     <Files>
-      <File FileName="Problem_A/Program.cs" Line="12" Column="13" />
-      <File FileName="Problem_A/bin/Debug/Inputs.txt" Line="11" Column="1" />
+      <File FileName="Problem_A/Program.cs" Line="12" Column="42" />
+      <File FileName="Problem_A/bin/Debug/Inputs.txt" Line="1" Column="3" />
+      <File FileName="Problem_B/Program.cs" Line="12" Column="13" />
+      <File FileName="Problem_B/bin/Debug/Inputs.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
@@ -10,6 +12,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Problem__B FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Problem__A PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Problem__A PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
