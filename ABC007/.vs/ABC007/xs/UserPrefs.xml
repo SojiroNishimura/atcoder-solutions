@@ -1,8 +1,11 @@
 ﻿<Properties StartupConfiguration="{2FA39AB3-1220-469F-A128-106922941B9C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Problem_B/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.Problem__C FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Problem_C/bin/Debug/Inputs.txt">
     <Files>
       <File FileName="Problem_B/Program.cs" Line="14" Column="30" />
       <File FileName="Problem_B/bin/Debug/Inputs.txt" Line="1" Column="1" />
+      <File FileName="Problem_C/Program.cs" Line="1" Column="1" />
+      <File FileName="Problem_C/bin/Debug/Inputs.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
