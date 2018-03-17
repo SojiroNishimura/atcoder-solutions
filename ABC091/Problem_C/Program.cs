@@ -25,17 +25,26 @@ namespace Problem_C
             }
 
             red.Sort();
-            blue.Sort((t1, t2) => t1.Item2 < t2.Item2 ? -1 : 1);
+            blue.Sort();
             var count = 0;
-            for (var i = 0; i < n; i++)
+            for (var i = 0; i < blue.Count; i++)
             {
-                for (var j = 0; j < n; j++)
+                var maxY = int.MinValue;
+                for (var j = 0; j < red.Count; j++)
                 {
-                    //Console.WriteLine($"r:{red[i]} b:{blue[j]}");
-                    if (blue[j] != null && red[i].Item1 < blue[j].Item1 && red[i].Item2 < blue[j].Item2)
+                    if (red[j] != null &&
+                        red[j].Item1 < blue[i].Item1 && red[j].Item2 < blue[i].Item2)
                     {
-                        count++;
-                        blue[j] = null;
+                        maxY = Math.Max(maxY, red[j].Item2);
+                    }
+                    //Console.WriteLine($"r:{red[j]} b:{blue[i]}");
+                }
+                if (maxY > int.MinValue) count++;
+                for (var k = 0; k < red.Count; k++)
+                {
+                    if (red[k] != null && red[k].Item2 == maxY)
+                    {
+                        red[k] = null;
                         break;
                     }
                 }
