@@ -8,6 +8,7 @@ namespace ABC092
         {
             var reader = new System.IO.StreamReader("Inputs_A.txt");
             Console.SetIn(reader);
+            Console.WriteLine("Problem_A");
         }
 
         public void Solve()
