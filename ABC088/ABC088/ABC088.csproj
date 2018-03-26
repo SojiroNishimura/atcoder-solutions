@@ -36,10 +36,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Problem_B.cs" />
     <Compile Include="Problem_A.cs" />
+    <Compile Include="Problem_C.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Inputs_B.txt" />
     <None Include="bin\Debug\Inputs_A.txt" />
+    <None Include="bin\Debug\Inputs_C.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
