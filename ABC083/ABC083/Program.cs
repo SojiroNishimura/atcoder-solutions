@@ -6,8 +6,9 @@ namespace ABC083
     {
         public static void Main(string[] args)
         {
-            new Problem_A().Solve();
-            new Problem_B().Solve2();
+            //new Problem_A().Solve();
+            //new Problem_B().Solve2();
+            new Problem_C().Solve();
         }
     }
 }
