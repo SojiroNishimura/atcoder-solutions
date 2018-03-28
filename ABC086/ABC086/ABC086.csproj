@@ -35,9 +35,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Problem_A.cs" />
+    <Compile Include="Problem_B.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Inputs_A.txt" />
+    <None Include="bin\Debug\Inputs_B.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
