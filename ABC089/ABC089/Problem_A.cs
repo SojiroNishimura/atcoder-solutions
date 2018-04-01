@@ -12,6 +12,7 @@ namespace ABC089
 
         public void Solve()
         {
+            Console.WriteLine("Problem_A");
             var n = int.Parse(Console.ReadLine());
             Console.WriteLine($"{n / 3}");
         }
