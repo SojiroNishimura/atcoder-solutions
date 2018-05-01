@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem_B", "Problem_B\Prob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem_C", "Problem_C\Problem_C.csproj", "{00F496F4-1E43-4BB3-85EA-F53FA2FA9852}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem_D", "Problem_D\Problem_D.csproj", "{EDFCC556-FC26-4377-B9F5-44C8B5963C6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{00F496F4-1E43-4BB3-85EA-F53FA2FA9852}.Debug|x86.Build.0 = Debug|x86
 		{00F496F4-1E43-4BB3-85EA-F53FA2FA9852}.Release|x86.ActiveCfg = Release|x86
 		{00F496F4-1E43-4BB3-85EA-F53FA2FA9852}.Release|x86.Build.0 = Release|x86
+		{EDFCC556-FC26-4377-B9F5-44C8B5963C6C}.Debug|x86.ActiveCfg = Debug|x86
+		{EDFCC556-FC26-4377-B9F5-44C8B5963C6C}.Debug|x86.Build.0 = Debug|x86
+		{EDFCC556-FC26-4377-B9F5-44C8B5963C6C}.Release|x86.ActiveCfg = Release|x86
+		{EDFCC556-FC26-4377-B9F5-44C8B5963C6C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
