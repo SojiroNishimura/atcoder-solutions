@@ -4,6 +4,9 @@ namespace ABC096
 {
     public class Problem_C
     {
+        static readonly int[] di = { 1, -1, 0, 0 };
+        static readonly int[] dj = { 0, 0, 1, -1 };
+
         public Problem_C()
         {
             var reader = new System.IO.StreamReader("Inputs_C.txt");
@@ -27,7 +30,19 @@ namespace ABC096
                 for (var j = 0; j < W; j++)
                 {
                     if (grid[i, j] == '.') continue;
-                    if (!findDrawable(i, j, grid))
+                    var isDrawable = false;
+                    for (var k = 0; k < 4; k++)
+                    {
+                        var i2 = i + di[k];
+                        var j2 = j + dj[k];
+                        if (i2 >= 0 && i2 < H
+                            && j2 >= 0 && j2 < W
+                            && grid[i2, j2] == '#')
+                        {
+                            isDrawable = true;
+                        }
+                    }
+                    if (!isDrawable)
                     {
                         Console.WriteLine("No");
                         return;
@@ -35,16 +50,6 @@ namespace ABC096
                 }
             }
             Console.WriteLine("Yes");
-        }
-
-        private bool findDrawable(int h, int w, char[,] grid)
-        {
-            var isDrawable = false;
-            if (h - 1 >= 0) isDrawable |= grid[h - 1, w] == '#';
-            if (w - 1 >= 0) isDrawable |= grid[h, w - 1] == '#';
-            if (h + 1 < grid.GetLength(0)) isDrawable |= grid[h + 1, w] == '#';
-            if (w + 1 < grid.GetLength(1)) isDrawable |= grid[h, w + 1] == '#';
-            return isDrawable;
         }
     }
 }
