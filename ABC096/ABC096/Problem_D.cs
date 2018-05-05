@@ -16,22 +16,25 @@ namespace ABC096
         {
             Console.WriteLine("Problem_D");
             var N = int.Parse(Console.ReadLine());
-            var primes = new List<int>();
-
-            for (var i = 2; i < 55555; i++)
-                if (isPrime(i)) primes.Add(i);
-
-            var ans = primes.FindAll(p => p % 5 == 1).Take(N).ToArray();
+            var primes = FindPrimesBy(55555);
+            var ans = primes.Where(p => p % 5 == 1).Take(N).ToArray();
             Console.WriteLine($"{string.Join(" ", ans)}");
         }
 
-        private bool isPrime(int n)
+        private int[] FindPrimesBy(int n)
         {
-            for (var i = 2; i * i <= n; i++)
+            var sieve = new bool[n + 1];
+            var primes = new List<int>();
+            for (var i = 2; i <= n; i++)
             {
-                if (n % i == 0) return false;
+                if (!sieve[i])
+                {
+                    primes.Add(i);
+                    for (var j = 1; i * j <= n; j++)
+                        sieve[i * j] = true;
+                }
             }
-            return true;
+            return primes.ToArray();
         }
     }
 }
